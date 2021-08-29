@@ -11,7 +11,7 @@ USER appuser
 
 FROM mcr.microsoft.com/dotnet/sdk:3.1-focal AS build
 WORKDIR /src
-COPY ["TodoApi.csproj", "TodoApi/"]
+COPY ["TodoApi.csproj", ""]
 RUN dotnet restore "TodoApi/TodoApi.csproj"
 COPY . .
 
